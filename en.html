@@ -3,163 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Staff Colonel Helmy Mohsen Saleh Mohsen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae - Staff Colonel Helmy Mohsen Saleh Mohsen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #1a3a5c; --primary-light: #2a5a8c; --accent: #c0392b; --gold: #d4af37; --gold-light: #f0d878; --dark: #0d1b2a; --text: #2c3e50; --text-light: #7f8c8d; --card-bg: rgba(255,255,255,0.95); --glass: rgba(255,255,255,0.1); }
+        :root {
+            --bg: #05070a;
+            --bg-card: #0d131c;
+            --gold: #d4af37;
+            --gold-dark: #997a00;
+            --crimson: #8b0000;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: rgba(212, 175, 55, 0.3);
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Cairo', sans-serif; background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 50%, #2a5a8c 100%); color: var(--text); line-height: 1.8; overflow-x: hidden; }
-        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding: 2rem; background: linear-gradient(135deg, rgba(13,27,42,0.95) 0%, rgba(26,58,92,0.9) 100%); }
-        .hero-content { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; max-width: 1200px; width: 100%; align-items: center; position: relative; z-index: 1; }
-        .profile-card { background: var(--glass); backdrop-filter: blur(20px); border: 1px solid rgba(212,175,55,0.3); border-radius: 24px; padding: 2rem; text-align: center; box-shadow: 0 25px 50px rgba(0,0,0,0.3); position: relative; overflow: hidden; }
-        .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid var(--gold); box-shadow: 0 0 30px rgba(212,175,55,0.4); margin-bottom: 1.5rem; }
-        .rank-badge { display: inline-block; background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--dark); padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; margin-bottom: 1rem; }
-        .hero-info h1 { font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem; }
-        .hero-info .subtitle { font-size: 1.3rem; color: var(--gold); margin-bottom: 2rem; font-weight: 600; }
-        .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-        .contact-item { background: var(--glass); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: 1rem; color: #fff; }
-        .contact-item i { font-size: 1.2rem; color: var(--gold); }
-        section { padding: 5rem 2rem; position: relative; z-index: 1; }
-        .section-header h2 { font-size: 2.5rem; font-weight: 800; color: #fff; text-align: center; padding-bottom: 1rem; }
-        .section-header h2::after { content: ''; display: block; width: 80px; height: 4px; background: linear-gradient(90deg, var(--gold), var(--accent)); margin: 10px auto 0; border-radius: 2px; }
-        .section-header p { color: #d1d5db; text-align: center; margin-top: 1rem; font-size: 1.1rem; }
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
-        .info-card { background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.2); border-top: 4px solid var(--primary); }
-        .info-card .card-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: #fff; font-size: 1.5rem; }
-        .info-card h3 { font-size: 1.3rem; color: var(--primary); margin-bottom: 1rem; }
-        .info-card ul { list-style: none; }
-        .info-card ul li { padding: 0.7rem 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; align-items: flex-start; gap: 0.8rem; }
-        .info-card ul li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--accent); font-size: 0.8rem; margin-top: 0.3rem; }
-        .timeline { max-width: 900px; margin: 0 auto; position: relative; }
-        .timeline::before { content: ''; position: absolute; left: 30px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--gold), var(--accent)); }
-        .timeline-item { position: relative; padding-left: 80px; margin-bottom: 2.5rem; }
-        .timeline-dot { position: absolute; left: 18px; top: 5px; width: 24px; height: 24px; background: var(--gold); border: 4px solid #fff; border-radius: 50%; box-shadow: 0 0 0 4px var(--gold); }
-        .timeline-content { background: var(--card-bg); border-radius: 16px; padding: 1.5rem 2rem; border-left: 4px solid var(--gold); }
-        .timeline-date { display: inline-block; background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: #fff; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 0.5rem; }
-        .timeline-content h4 { font-size: 1.2rem; color: var(--primary); margin-bottom: 0.5rem; }
-        .certificates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
-        .cert-card { background: var(--card-bg); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); cursor: pointer; position: relative; }
-        .cert-img { width: 100%; height: 240px; object-fit: cover; border-bottom: 3px solid var(--gold); }
-        .cert-info { padding: 1.5rem; }
-        .cert-info h4 { color: var(--primary); font-size: 1.1rem; margin-bottom: 0.5rem; }
-        .research-card { background: var(--card-bg); border-radius: 20px; padding: 2.5rem; max-width: 900px; margin: 0 auto 2rem; border-left: 5px solid var(--accent); }
-        .research-card h3 { color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem; }
-        .skills-container { max-width: 800px; margin: 0 auto; }
-        .skill-item { margin-bottom: 1.5rem; }
-        .skill-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #fff; }
-        .skill-bar { height: 10px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; }
-        .skill-progress { height: 100%; background: linear-gradient(90deg, var(--gold), var(--accent)); }
-        footer { background: var(--dark); padding: 3rem 2rem; text-align: center; border-top: 3px solid var(--gold); color: #fff; }
-        .action-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1.5rem; justify-content: center; }
-        .btn-action { padding: 10px 25px; border-radius: 30px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-family: 'Cairo'; border: none; }
-        .btn-print { background: linear-gradient(135deg, #1a3a5c, #2a5a8c); color: #fff; }
-        .lang-switch { position: absolute; top: 20px; right: 20px; background: var(--gold); color: var(--dark); padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 10; }
-        @media (max-width: 900px) { .hero-content { grid-template-columns: 1fr; text-align: center; } .contact-grid { grid-template-columns: 1fr; } .timeline::before { left: 20px; } .timeline-item { padding-left: 60px; } .timeline-dot { left: 8px; } }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.8; background-image: radial-gradient(circle at 50% 0%, #111827 0%, var(--bg) 70%); }
+        h1, h2, h3, h4 { font-family: 'Cairo', sans-serif; }
+        
+        /* Hero Tactical */
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding: 4rem 2rem; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.1; z-index: 0; }
+        .hero-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        
+        .profile-frame { position: relative; width: 260px; height: 260px; margin-bottom: 2rem; }
+        .profile-frame::before { content: ''; position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; border: 1px solid var(--gold); transform: rotate(45deg); opacity: 0.5; }
+        .profile-frame::after { content: ''; position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 1px dashed var(--gold-dark); transform: rotate(45deg); opacity: 0.2; }
+        .profile-img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid var(--gold); position: relative; z-index: 2; }
+        
+        .rank { color: var(--gold); letter-spacing: 4px; text-transform: uppercase; font-weight: 900; font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--gold); padding-bottom: 5px; display: inline-block; }
+        .hero h1 { font-size: 4rem; font-weight: 900; margin-bottom: 0.5rem; color: #fff; text-shadow: 0 4px 10px rgba(0,0,0,0.8); }
+        .hero p { color: var(--text-muted); font-size: 1.3rem; max-width: 600px; margin: 0 auto 2rem; }
+        
+        .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; width: 100%; max-width: 600px; margin-bottom: 2rem; }
+        .contact-item { background: rgba(13, 19, 28, 0.8); border: 1px solid var(--border); padding: 1rem; display: flex; align-items: center; gap: 1rem; text-align: left; }
+        .contact-item i { color: var(--gold); font-size: 1.2rem; }
+        .contact-item span { color: var(--text-main); font-size: 0.9rem; }
+
+        .actions { display: flex; gap: 1rem; }
+        .btn { padding: 15px 40px; background: transparent; color: var(--gold); border: 1px solid var(--gold); font-weight: 900; font-family: 'Cairo'; cursor: pointer; transition: 0.3s; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+        .btn:hover { background: var(--gold); color: var(--bg); }
+        .btn-solid { background: var(--gold); color: var(--bg); }
+        .btn-solid:hover { background: #fff; color: var(--bg); border-color: #fff; }
+        .lang-switch { position: absolute; top: 2rem; right: 2rem; color: var(--gold); border: 1px solid var(--gold); padding: 5px 20px; text-decoration: none; font-weight: 700; z-index: 10; }
+
+        /* Sections */
+        .section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; position: relative; }
+        .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 3rem; }
+        .section-header h2 { font-size: 2.2rem; font-weight: 900; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
+        .section-header .line { flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); }
+        
+        /* Tactical Lists */
+        .tactical-list { display: flex; flex-direction: column; gap: 1rem; }
+        .tactical-item { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--gold); padding: 1.5rem; display: flex; gap: 2rem; transition: 0.3s; }
+        .tactical-item:hover { background: #111827; border-left-color: var(--gold-light); transform: translateX(5px); }
+        .tactical-date { color: var(--gold); font-weight: 900; font-family: 'Cairo'; min-width: 120px; font-size: 1.1rem; }
+        .tactical-content h4 { color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .tactical-content p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Stats */
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center; }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--border); padding: 2rem; position: relative; overflow: hidden; }
+        .stat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gold); }
+        .stat-num { font-size: 3.5rem; font-weight: 900; color: var(--gold); font-family: 'Cairo'; line-height: 1; }
+        .stat-label { color: var(--text-muted); font-weight: 700; margin-top: 0.5rem; }
+
+        /* Certificates */
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .cert-card { background: var(--bg-card); border: 1px solid var(--border); padding: 1rem; cursor: pointer; transition: 0.3s; text-align: center; }
+        .cert-card:hover { border-color: var(--gold); box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
+        .cert-card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid var(--gold); margin-bottom: 1rem; }
+        .cert-card h4 { color: #fff; font-size: 1.1rem; }
+
+        /* Footer */
+        footer { background: #000; border-top: 1px solid var(--border); padding: 3rem; text-align: center; }
+        footer p { color: var(--gold); font-weight: 700; }
+
+        /* Lightbox */
+        .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; align-items: center; justify-content: center; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 90vh; border: 2px solid var(--gold); }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; color: var(--gold); font-size: 3rem; cursor: pointer; background: none; border: none; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .tactical-item { flex-direction: column; gap: 0.5rem; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .section-header h2 { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
+
     <a href="index.html" class="lang-switch">عربي</a>
-    
-    <section class="hero" id="hero">
+
+    <section class="hero">
         <div class="hero-content">
-            <div class="profile-card">
+            <div class="profile-frame">
                 <img src="https://i.imgur.com/1pmLwNN.jpg" alt="Helmy Mohsen" class="profile-img">
-                <div class="rank-badge">Staff Colonel</div>
-                <h3 style="color: #fff; font-size: 1.3rem;">Helmy Mohsen Saleh Mohsen</h3>
-                <p style="color: var(--gold);">حلمي محسن صالح محسن</p>
             </div>
-            <div class="hero-info">
-                <h1>Curriculum Vitae</h1>
-                <p class="subtitle">Military Officer specialized in Military Sciences & National Security</p>
-                <div class="contact-grid">
-                    <div class="contact-item"><i class="fas fa-calendar-alt"></i><span>May 21, 1983</span></div>
-                    <div class="contact-item"><i class="fas fa-envelope"></i><span>alredfani@gmail.com</span></div>
-                    <div class="contact-item"><i class="fas fa-phone"></i><span>777895099</span></div>
-                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Aden - Yemen</span></div>
-                </div>
-                <div class="action-buttons">
-                    <button onclick="window.print()" class="btn-action btn-print"><i class="fas fa-print"></i> Print / Save PDF</button>
-                </div>
+            <div class="rank">Staff Colonel</div>
+            <h1>Helmy Mohsen Saleh Mohsen</h1>
+            <p>Military Officer Specialized in Military Sciences & National Security</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item"><i class="fas fa-calendar-alt"></i><span>May 21, 1983</span></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i><span>alredfani@gmail.com</span></div>
+                <div class="contact-item"><i class="fas fa-phone"></i><span>777895099</span></div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Aden - Yemen</span></div>
+            </div>
+
+            <div class="actions">
+                <a href="cv.html" target="_blank" class="btn btn-solid"><i class="fas fa-file-pdf"></i> Download CV</a>
+                <button onclick="window.print()" class="btn"><i class="fas fa-print"></i> Print</button>
             </div>
         </div>
     </section>
 
-    <section id="achievements" style="background: rgba(0,0,0,0.15);">
-        <div class="section-header"><h2>Achievements</h2><p>Milestones in the professional career</p></div>
-        <div class="cards-grid" style="max-width: 800px;">
-            <div class="info-card" style="text-align: center;"><div style="font-size: 2.5rem; color: var(--gold); font-weight: 800;">20+</div><p>Years of Experience</p></div>
-            <div class="info-card" style="text-align: center;"><div style="font-size: 2.5rem; color: var(--gold); font-weight: 800;">12+</div><p>Training Courses</p></div>
-            <div class="info-card" style="text-align: center;"><div style="font-size: 2.5rem; color: var(--gold); font-weight: 800;">2</div><p>Scientific Research</p></div>
+    <section class="section">
+        <div class="section-header"><h2>Career & Achievements</h2><div class="line"></div></div>
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-num">20+</div><div class="stat-label">Years of Experience</div></div>
+            <div class="stat-card"><div class="stat-num">12+</div><div class="stat-label">Training Courses</div></div>
+            <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Scientific Research</div></div>
         </div>
     </section>
 
-    <section id="qualifications">
-        <div class="section-header"><h2>Qualifications</h2><p>Academic Certificates</p></div>
-        <div class="cards-grid">
-            <div class="info-card"><div class="card-icon"><i class="fas fa-university"></i></div><h3>Master in Military Sciences</h3><ul><li>Joint Command and Staff College</li><li>Republic of Sudan - 2016</li><li>Specialization: Advanced Military Sciences</li></ul></div>
-            <div class="info-card"><div class="card-icon"><i class="fas fa-graduation-cap"></i></div><h3>Bachelor in Military Sciences</h3><ul><li>Air & Air Defense College</li><li>Sana'a - 2005</li><li>Specialization: Military Sciences</li></ul></div>
-            <div class="info-card"><div class="card-icon"><i class="fas fa-school"></i></div><h3>High School Diploma</h3><ul><li>Scientific Secondary School</li><li>Lahj Governorate - 2000</li><li>Branch: Sciences</li></ul></div>
+    <section class="section">
+        <div class="section-header"><h2>Academic Qualifications</h2><div class="line"></div></div>
+        <div class="tactical-list">
+            <div class="tactical-item">
+                <div class="tactical-date">2016</div>
+                <div class="tactical-content"><h4>Master in Military Sciences</h4><p>Joint Command and Staff College - Sudan</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2005</div>
+                <div class="tactical-content"><h4>Bachelor in Military Sciences</h4><p>Air & Air Defense College - Sana'a</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2000</div>
+                <div class="tactical-content"><h4>High School Diploma</h4><p>Scientific Secondary School - Lahj Governorate</p></div>
+            </div>
         </div>
     </section>
 
-    <section id="experience" style="background: rgba(0,0,0,0.2);">
-        <div class="section-header"><h2>Work Experience</h2><p>Career Path & Previous Positions</p></div>
-        <div class="timeline">
-            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">Present</span><h4>Military Intelligence Department - Aden</h4><p>Current position at the Military Intelligence Department in Aden Governorate</p></div></div>
-            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2016 - 2018</span><h4>Head of National Security - Lahj</h4><p>Leading the National Security Agency in Lahj Governorate</p></div></div>
-            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2013 - 2015</span><h4>Military Intelligence Department</h4><p>Working at the Military Intelligence Department</p></div></div>
-            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2011 - 2013</span><h4>Officers Affairs Department</h4><p>Working at the Officers Affairs Department</p></div></div>
-            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2008 - 2011</span><h4>Director of Al-Hodeidah Axis Commander's Office</h4><p>Managing the Al-Hodeidah Axis Commander's Office</p></div></div>
-            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2005 - 2008</span><h4>Air Force</h4><p>Service in the Air Force and Air Defense</p></div></div>
+    <section class="section">
+        <div class="section-header"><h2>Work Experience</h2><div class="line"></div></div>
+        <div class="tactical-list">
+            <div class="tactical-item">
+                <div class="tactical-date">Present</div>
+                <div class="tactical-content"><h4>Military Intelligence Department</h4><p>Current position in Aden Governorate</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2016 - 2018</div>
+                <div class="tactical-content"><h4>Head of National Security</h4><p>Leading the National Security Agency in Lahj Governorate</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2013 - 2015</div>
+                <div class="tactical-content"><h4>Military Intelligence Department</h4><p>Working at the Military Intelligence Department</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2011 - 2013</div>
+                <div class="tactical-content"><h4>Officers Affairs Department</h4><p>Working at the Officers Affairs Department</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2008 - 2011</div>
+                <div class="tactical-content"><h4>Director of Al-Hodeidah Axis Commander's Office</h4><p>Managing the Al-Hodeidah Axis Commander's Office</p></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">2005 - 2008</div>
+                <div class="tactical-content"><h4>Air Force</h4><p>Service in the Air Force and Air Defense</p></div>
+            </div>
         </div>
     </section>
 
-    <section id="languages">
-        <div class="section-header"><h2>Languages</h2><p>Language Skills & International Certificates</p></div>
-        <div class="skills-container">
-            <div class="skill-item"><div class="skill-header"><span>Arabic</span><span>100%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 100%;"></div></div></div>
-            <div class="skill-item"><div class="skill-header"><span>English</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div>
-            <div class="skill-item"><div class="skill-header"><span>Russian</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></div>
+    <section class="section">
+        <div class="section-header"><h2>Languages & Certificates</h2><div class="line"></div></div>
+        <div class="tactical-list">
+            <div class="tactical-item">
+                <div class="tactical-date">Arabic</div>
+                <div class="tactical-content"><h4>Native Language</h4></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">English</div>
+                <div class="tactical-content"><h4>Advanced Level (IELTS 7.5 - C1)</h4></div>
+            </div>
+            <div class="tactical-item">
+                <div class="tactical-date">Russian</div>
+                <div class="tactical-content"><h4>Advanced Level</h4></div>
+            </div>
         </div>
     </section>
 
-    <section id="certificates" style="background: rgba(0,0,0,0.2);">
-        <div class="section-header"><h2>Certificates & Official Documents</h2><p>Accredited Academic & Training Certificates</p></div>
-        <div class="certificates-grid">
-            <div class="cert-card"><img src="https://i.imgur.com/M8wgVxm.jpg" class="cert-img"><div class="cert-info"><h4>Master Certificate</h4><p>Master's Degree in Military Sciences - Sudan 2016</p></div></div>
-            <div class="cert-card"><img src="https://i.imgur.com/VoIIBN7.jpg" class="cert-img"><div class="cert-info"><h4>Bachelor Certificate</h4><p>Bachelor of Air & Air Defense Sciences - Sana'a 2005</p></div></div>
-            <div class="cert-card"><img src="https://i.imgur.com/kpV7Qqy.jpg" class="cert-img"><div class="cert-info"><h4>Battalion Commanders Certificate</h4><p>Al-Thalaya Leadership Institute - Aden 2014</p></div></div>
-            <div class="cert-card"><img src="https://i.imgur.com/YP6r6RK.jpg" class="cert-img"><div class="cert-info"><h4>IELTS Certificate</h4><p>Band 7.5 - C1 Level - Aden 2019</p></div></div>
+    <section class="section">
+        <div class="section-header"><h2>Certificates & Documents</h2><div class="line"></div></div>
+        <div class="cert-grid">
+            <div class="cert-card" onclick="openLightbox('https://i.imgur.com/M8wgVxm.jpg')"><img src="https://i.imgur.com/M8wgVxm.jpg"><h4>Master Certificate</h4></div>
+            <div class="cert-card" onclick="openLightbox('https://i.imgur.com/VoIIBN7.jpg')"><img src="https://i.imgur.com/VoIIBN7.jpg"><h4>Bachelor Certificate</h4></div>
+            <div class="cert-card" onclick="openLightbox('https://i.imgur.com/kpV7Qqy.jpg')"><img src="https://i.imgur.com/kpV7Qqy.jpg"><h4>Battalion Commanders Course</h4></div>
+            <div class="cert-card" onclick="openLightbox('https://i.imgur.com/YP6r6RK.jpg')"><img src="https://i.imgur.com/YP6r6RK.jpg"><h4>IELTS Certificate</h4></div>
         </div>
-        <p style="text-align: center; color: #d1d5db; margin-top: 2rem;">All certificates are displayed with the owner's logo and watermark. They are for viewing only and not valid for official use.</p>
-    </section>
-
-    <section id="research">
-        <div class="section-header"><h2>Scientific & Research Contributions</h2><p>Published Research & Theses</p></div>
-        <div class="research-card">
-            <h3>Master's Thesis (2016)</h3>
-            <p><strong>Research Title:</strong> "The Impact of Terrorism in Yemen: Dimensions, Risks and Treatment Mechanisms"</p>
-            <p style="margin-top: 1rem;">A comprehensive analytical study of the effects of terrorism on Yemeni national security, published on Noor Book Library platform.</p>
-        </div>
-        <div class="research-card">
-            <h3>Research Paper (2012)</h3>
-            <p><strong>Research Title:</strong> "Protection of Important Personalities"</p>
-            <p style="margin-top: 1rem;">A specialized study covering tactical and strategic aspects of protecting VIPs in different environments.</p>
-        </div>
-    </section>
-
-    <section id="skills" style="background: rgba(0,0,0,0.2);">
-        <div class="section-header"><h2>Skills & Abilities</h2><p>Professional & Personal Competencies</p></div>
-        <div class="cards-grid">
-            <div class="info-card"><div class="card-icon"><i class="fas fa-brain"></i></div><h3>Analysis & Planning</h3><ul><li>Ability to understand and analyze problems</li><li>Developing plans to solve complex issues</li><li>Strategic thinking and intelligence analysis</li></ul></div>
-            <div class="info-card"><div class="card-icon"><i class="fas fa-users"></i></div><h3>Leadership & Teamwork</h3><ul><li>Ability to lead work teams</li><li>Communication and dialogue with others</li><li>In a civilized and modern manner</li></ul></div>
-        </div>
+        <p style="text-align: center; color: var(--text-muted); margin-top: 2rem; font-size: 0.9rem;">All certificates are displayed with the owner's logo and watermark. They are for viewing only.</p>
     </section>
 
     <footer>
         <p>Helmy Mohsen Saleh Mohsen - Staff Colonel</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Curriculum Vitae - 2024</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">© 2024 All Rights Reserved</p>
     </footer>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Certificate">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
 </body>
-  </html>
+</html>
